@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: darkviolet;
+    color: white;
+
+}
+
+/* .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+#btn{
+    width: 40%;
+    margin: 20px auto;
+    padding: 15px;
+} */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap:30px;
+}
+
+.owner{
+    text-align: center;
+    margin-top: ;
+}
+
+input, textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.submit_btn{
+    padding: 10px;
+    border-style: none;
+    display: block;
+    margin: auto;
+    margin-top: 20px    
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 59px;
+    padding-top: 10px;
+}
+
+.uncompleted_tasks{
+    display: flex;
+    flex-direction: column;
+}
+
+.uncomplete_tasks_title{
+    margin-left: 70px;
+}
+
+.task_list, p{
+    padding: 5px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.all_tasks{
+    display: flex;
+    margin: 10px;
+    gap: 90px;
+}
+
+.checkBtn, .dltBtn{
+    margin-left: -160px;
+    font-size: 0.7rem;
+    padding: 4px;
+}
