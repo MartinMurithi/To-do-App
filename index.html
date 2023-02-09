@@ -4,70 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
     <link rel="stylesheet" href="index.css">
-    <title>TO DO APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <div class="container">
+    <form action="" class="add-todos-form">
+
+      <div class="userInputs">
+      <!-- Task Title -->
+        <input
+           type="text" 
+           class="title"
+           placeholder="Task Title">
+
+        <!-- Task description -->
+        <input 
+          type="text" 
+          class="description"
+          placeholder="Task Description">
+
+        <!-- Task completion date -->
+        <input 
+          type="date" 
+          class="date">
+
+        <button class="submitTask">Create Task</button>
+      </div>
+      </form>
+
     
+    <h2 class=>Uncompleted Todos</h2>
 
-    <!--<div class="menu">
-        <button class="showCreateTaskDiv" id="btn">Create New Task</button>
-        <button class="show_tasks" id="btn">Show Tasks</button>
-        <button class="show_completed_tasks" id="btn">Show Completed Tasks</button>
-    </div>
--->
-    <div class="container">
-        <form action="" class="form">
-            <h1 class="owner">Martin's Todo App</h1>
-            <!--TITLE-->
-            <div class="div_title" id="task">
-                <!-- <label for="task_title" class="label_title">Title</label> -->
-                <input type="text"
-                    name="" 
-                    placeholder="Task Title" 
-                    class="task_title">
-            </div>
+    <ul class="uncompleted-list-todos">
+        
+    </ul>
 
-            <!--DESCRIPTION-->
-            <div class="div_description">
-                <textarea 
-                    name="" 
-                    class="task_description" 
-                    cols="20" 
-                    rows="8"
-                    placeholder="Task Description"></textarea>
-            </div>
-
-            <!--TIME-->
-            <div class="div_time" id="time">
-                <input type="datetime-local"
-                    name="" 
-                    placeholder="Completion Time" 
-                    class="completion_time">
-            </div>
-
-            <div class="div_submit">
-                <button type="button" onclick="" class="submit_btn">Add Task</button>
-            </div>
-        </form>
-
-
-        <!--DIV TO DISPLAY UNCOMPLETED TASKS-->
-        <div class="all_tasks">
-        <div class="uncompleted_tasks">
-            <h3 class="uncomplete_tasks_title">UNCOMPLETED TASKS</h3>
-            <ul class="uncompleted_tasks_list"></ul>
-        </div>
-
-         <!--DIV TO DISPLAY COMPLETED TASKS-->
-         <div class="completed_tasks">
-            <h3 class="complete_tasks_title">COMPLETED TASKS</h3>
-            <ul class="completed_tasks_list"></ul>
-         </div>
-
-        </div>
-    </div>
-
-    <script src="app.js"></script>
+    <h2 class=>Completed Todos</h2>
+    <ul class="completed-list-todos">
+        
+    </ul>
+</div>
+    <script src="index.js"></script>
 </body>
 </html>
